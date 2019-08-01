@@ -1,0 +1,19 @@
+{
+  "modelName" : "Adsata1",
+  "entityName" : "User",
+  "tableName" : "User",
+  "unamePropertyName" : "username",
+  "unameColumnName" : "Username",
+  "uidPropertyName" : "id",
+  "uidColumnName" : "ID",
+  "pwPropertyName" : "password",
+  "pwColumnName" : "Password",
+  "rolePropertyName" : "",
+  "roleColumnName" : "",
+  "useRolesQuery" : false,
+  "rolesByUsernameQuery" : "",
+  "tenantIdField" : null,
+  "defTenantId" : 0,
+  "tenantIdPropertyName" : null,
+  "queryType" : "HQL"
+}
