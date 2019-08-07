@@ -1,0 +1,20 @@
+<wm-page pagetitle="User Details" name="page1">
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-table name="UserTable1" title="User List" dataset="bind:Variables.Adsata1UserData.dataSet" navigation="Pager" accessroles="Everyone">
+                <wm-table-column binding="id" caption="Id" primary-key="true" edit-widget-type="number" type="integer" generator="identity" readonly="true" show="true"></wm-table-column>
+                <wm-table-column binding="username" caption="Username" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="password" caption="Password" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="firstName" caption="First Name" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="lastName" caption="Last Name" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="email" caption="Email" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="birthDate" caption="Birth Date" edit-widget-type="date" type="date" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="userCerated" caption="User Cerated" edit-widget-type="timestamp" type="timestamp" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="country" caption="Country" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="rowOperations" caption="Actions" width="120px" type="custom" readonly="true" sortable="false" searchable="false" show="true"></wm-table-column>
+                <wm-table-row-action key="updaterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-pencil" title="Edit" action="editRow($event)" disabled="false" widget-type="button"></wm-table-row-action>
+                <wm-table-row-action key="deleterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-trash" title="Delete" action="deleteRow($event)" disabled="false" widget-type="button"></wm-table-row-action>
+            </wm-table>
+        </wm-page-content>
+    </wm-content>
+</wm-page>

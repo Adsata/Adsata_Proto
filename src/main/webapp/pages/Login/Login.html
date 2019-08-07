@@ -1,4 +1,4 @@
-<wm-page layouttype="one-column" columns="1" name="page1" pagetitle="Login">
+<wm-page layouttype="one-column" columns="1" name="loginGridRow" pagetitle="Login">
     <wm-content name="content1" height="100%">
         <wm-page-content columnwidth="12" name="column1" padding="0px" class="login">
             <wm-container class="bg-primary" width="100%" height="100%" backgroundimage="resources/images/imagelists/login-bg.png" backgroundrepeat="no-repeat" backgroundposition="0 0" backgroundsize="100% 100%" backgroundattachment="fixed" name="loginPageContainer">
@@ -15,7 +15,7 @@
                         <wm-gridcolumn columnwidth="3" name="gridcolumn8" class="col-xs-1 col-md-4"></wm-gridcolumn>
                         <wm-gridcolumn name="loginContentColumn" columnwidth="6" class="col-xs-10  col-md-4">
                             <wm-container name="container1" class="panel" backgroundcolor="#ffffff" color="#bdbdbd">
-                                <wm-label name="label1" caption="User" horizontalalign="center" class="p" backgroundcolor="#f7f7f7" margin="0px unset" fontsize="20" padding="1em unset" color="#1e1e1e"></wm-label>
+                                <wm-label name="label1" caption="User" horizontalalign="center" class="p" backgroundcolor="#f7f7f7" margin="0px unset" fontsize="20" padding="1em unset" color="#1e1e1e" fontfamily="avenir"></wm-label>
                                 <wm-login name="loginForm" title="" autocomplete="nofill">
                                     <wm-form name="form1">
                                         <wm-layoutgrid name="layoutgrid2" columns="1">
@@ -25,7 +25,7 @@
                                                         <wm-container class="input-group-addon" name="container4">
                                                             <wm-icon name="icon1" iconclass="wi wi-user"></wm-icon>
                                                         </wm-container>
-                                                        <wm-text placeholder="Username" name="username" class="app-login-username" width="100%" autocomplete="false" autocorrect="off" autocapitalize="off" updateon="default" required="true"></wm-text>
+                                                        <wm-text placeholder="Username" name="username" class="app-login-username" width="100%" autocomplete="false" autocorrect="off" autocapitalize="off" updateon="default" required="true" fontfamily="avenir"></wm-text>
                                                     </wm-container>
                                                 </wm-gridcolumn>
                                             </wm-gridrow>
@@ -35,7 +35,8 @@
                                                         <wm-container class="input-group-addon" name="container6">
                                                             <wm-icon name="icon1" iconclass="wi wi-key"></wm-icon>
                                                         </wm-container>
-                                                        <wm-text type="password" name="password" placeholder="Password" class="app-login-passworØd" width="100%" autocomplete="true" autocorrect="off" autocapitalize="off" updateon="default" required="true"></wm-text>
+                                                        <wm-text type="password" name="password" placeholder="Password" class="app-login-passworØd" width="100%" autocomplete="true" autocorrect="off" autocapitalize="off" updateon="default" required="true"
+                                                            fontfamily="avenir"></wm-text>
                                                     </wm-container>
                                                 </wm-gridcolumn>
                                             </wm-gridrow>
@@ -46,13 +47,13 @@
                                             </wm-gridrow>
                                             <wm-gridrow name="gridrow13">
                                                 <wm-gridcolumn columnwidth="12" name="gridcolumn17">
-                                                    <wm-button type="submit" caption="Login" width="100%" class="app-login-button btn-primary" name="loginButton" fontsize="1.2" fontunit="em" on-click="Actions.loginAction.invoke()"></wm-button>
+                                                    <wm-button type="submit" caption="Login" width="100%" class="app-login-button btn-primary" name="loginButton" fontsize="1.2" fontunit="em" on-click="Actions.loginAction.invoke()" fontfamily="avenir"></wm-button>
                                                 </wm-gridcolumn>
                                             </wm-gridrow>
                                             <wm-gridrow name="gridrow14">
                                                 <wm-gridcolumn columnwidth="12" name="gridcolumn18">
-                                                    <wm-button class="btn-default" caption="Not a user?" type="submit" margin="20px 0.5px unset 100px" name="Signup_button" on-click="Widgets.pagedialog2.open()" textalign="center" iconposition="left" width="100"
-                                                        hint="Sign Up"></wm-button>
+                                                    <wm-button class="btn-default" caption="Not a user?" type="submit" margin="5% 0.5% unset 35%" name="Signup_button" on-click="Widgets.pagedialog2.open()" textalign="center" iconposition="left" width="100"
+                                                        hint="Sign Up" padding="unset 0% unset unset" borderwidth="unset 0px unset unset" fontweight="bold" fontfamily="avenir"></wm-button>
                                                 </wm-gridcolumn>
                                             </wm-gridrow>
                                             <wm-gridrow name="gridrow15"></wm-gridrow>

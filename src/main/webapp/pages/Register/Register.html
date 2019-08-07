@@ -1,5 +1,6 @@
 <wm-partial name="partial1">
-    <wm-liveform errormessage="" title="Sign Up" iconclass="wi wi-edit" defaultmode="Edit" dataset="bind:Variables.Adsata1UserData1.dataSet" captionalign="left" captionposition="top" name="UserLiveForm1" on-beforeservicecall="UserLiveForm1Beforeservicecall($event, $operation, $data, options)">
+    <wm-liveform errormessage="" title="Sign Up" iconclass="wi wi-edit" defaultmode="Edit" dataset="bind:Variables.Adsata1UserData1.dataSet" captionalign="left" captionposition="top" name="UserLiveForm1" on-beforeservicecall="UserLiveForm1Beforeservicecall($event, $operation, $data, options)"
+        validationtype="html">
         <wm-layoutgrid columns="1" name="layoutgrid2">
             <wm-gridrow name="gridrow8">
                 <wm-gridcolumn columnwidth="12" name="gridcolumn8">
@@ -10,7 +11,7 @@
                 <wm-gridcolumn columnwidth="12" name="gridcolumn9">
                     <wm-form-field name="password" displayname="Password" show="true" primary-key="false" generator="assigned" key="password" type="string" readonly="false" required="true" widget="text" maxchars="255" inputtype="password" placeholder="Enter value"></wm-form-field>
                     <wm-form-field name="confirm_password" displayname="Confirm Password" required="true" show="true" generator="assigned" primary-key="false" type="string" maxchars="255" widget="text" inputtype="password" key="confirm_password"
-                        placeholder="Enter value"></wm-form-field>
+                        placeholder="Enter value" on-change="confirm_passwordChange($event, widget, newVal, oldVal)"></wm-form-field>
                 </wm-gridcolumn>
             </wm-gridrow>
             <wm-gridrow name="gridrow10">
@@ -20,12 +21,12 @@
             </wm-gridrow>
             <wm-gridrow name="gridrow11">
                 <wm-gridcolumn columnwidth="12" name="gridcolumn11">
-                    <wm-form-field name="lastName" displayname="Last Name" show="true" primary-key="false" generator="assigned" key="lastName" type="string" readonly="false" required="true" widget="text" maxchars="255" inputtype="text" placeholder="Enter value"></wm-form-field>
+                    <wm-form-field name="lastName" displayname="Last Name" show="true" primary-key="false" generator="assigned" key="lastName" type="string" readonly="false" required="true" widget="text" maxchars="50" inputtype="text" placeholder="Enter value"></wm-form-field>
                 </wm-gridcolumn>
             </wm-gridrow>
             <wm-gridrow name="gridrow12">
                 <wm-gridcolumn columnwidth="12" name="gridcolumn12">
-                    <wm-form-field name="email" displayname="Email" show="true" primary-key="false" generator="assigned" key="email" type="string" readonly="false" required="true" widget="text" maxchars="255" inputtype="email" placeholder="Enter value"></wm-form-field>
+                    <wm-form-field name="email" displayname="Email" show="true" primary-key="false" generator="assigned" key="email" type="string" readonly="false" required="true" widget="text" maxchars="50" inputtype="email" placeholder="Enter value"></wm-form-field>
                 </wm-gridcolumn>
             </wm-gridrow>
             <wm-gridrow name="gridrow13">
@@ -42,6 +43,8 @@
         </wm-layoutgrid>
         <wm-form-field name="id" displayname="Id" show="false" primary-key="true" generator="identity" key="id" type="integer" readonly="true" required="true" step="0" widget="number" inputtype="number" placeholder="Enter value"></wm-form-field>
         <wm-form-action key="reset" display-name="Reset" show="true" class="form-reset btn-secondary" iconclass="wi wi-refresh" title="Reset" action="reset();delete()" disabled="false" widget-type="button" type="button" update-mode="true"></wm-form-action>
-        <wm-form-action key="save" display-name="Save" show="true" class="form-save btn-success" iconclass="wi wi-save" title="Save" disabled="false" widget-type="button" type="submit" update-mode="true"></wm-form-action>
+        <wm-form-action key="save" display-name="Save" show="true" class="form-save btn-success" iconclass="wi wi-save" title="Save" action="Actions.Passwords_Missmatch.invoke();saveAndNew()" disabled="false" widget-type="button" type="button"
+            update-mode="true"></wm-form-action>
     </wm-liveform>
+    <wm-alertdialog on-ok="notification.onOk()" name="notificationalertdialog" notificationdialog="alert" message="bind:notification.text" title="" oktext="bind:notification.okButtonText" alerttype="bind:notification.alerttype" on-close="notification.onClose()"></wm-alertdialog>
 </wm-partial>

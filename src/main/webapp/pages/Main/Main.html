@@ -59,6 +59,19 @@
                     <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" show="true" type="submit" update-mode="true"></wm-form-action>
                 </wm-liveform>
             </wm-livetable>
+            <wm-table name="UserTable1" title="User List" dataset="bind:Variables.Adsata1UserData1.dataSet" navigation="Pager">
+                <wm-table-column binding="id" caption="Id" primary-key="true" edit-widget-type="number" type="integer" generator="identity" readonly="true" show="true"></wm-table-column>
+                <wm-table-column binding="username" caption="Username" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="password" caption="Password" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="firstName" caption="First Name" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="lastName" caption="Last Name" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="email" caption="Email" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="birthDate" caption="Birth Date" edit-widget-type="date" type="date" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="userCerated" caption="User Cerated" edit-widget-type="timestamp" type="timestamp" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="country" caption="Country" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                <wm-table-row-action key="updaterow" display-name="" title="Edit" iconclass="wi wi-pencil" show="true" class="btn-transparent" action="editRow($event)"></wm-table-row-action>
+                <wm-table-row-action key="deleterow" display-name="" title="Delete" iconclass="wi wi-trash" show="true" class="btn-transparent" action="deleteRow($event)"></wm-table-row-action>
+            </wm-table>
         </wm-page-content>
         <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>

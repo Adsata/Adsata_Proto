@@ -1,6 +1,14 @@
 [ {
+  "name" : "Analysis",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "Common",
   "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Embed",
+  "type" : "PAGE",
   "params" : [ ]
 }, {
   "name" : "Login",
@@ -11,8 +19,24 @@
   "type" : "PAGE",
   "params" : [ ]
 }, {
+  "name" : "Projects",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "Register",
   "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Results",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Stims",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "UserDetails",
+  "type" : "PAGE",
   "params" : [ ]
 }, {
   "name" : "footer",

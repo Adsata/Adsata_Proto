@@ -15,6 +15,28 @@
     } ],
     "operation" : "toast"
   },
+  "goToPage_Analysis" : {
+    "_id" : "wm-goToPage_Analysis-wm.NavigationVariable-1564654848484",
+    "name" : "goToPage_Analysis",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Analysis",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Embed" : {
+    "_id" : "wm-goToPage_Embed-wm.NavigationVariable-1564654773634",
+    "name" : "goToPage_Embed",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Embed",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
   "goToPage_Main" : {
     "_id" : "wm-wm.NavigationVariable1389180517517",
     "name" : "goToPage_Main",
@@ -22,6 +44,50 @@
     "category" : "wm.NavigationVariable",
     "operation" : "gotoPage",
     "pageName" : "Main"
+  },
+  "goToPage_Projects" : {
+    "_id" : "wm-goToPage_Projects-wm.NavigationVariable-1564654462787",
+    "name" : "goToPage_Projects",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Projects",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Results" : {
+    "_id" : "wm-goToPage_Results-wm.NavigationVariable-1564654820377",
+    "name" : "goToPage_Results",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Results",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Stims" : {
+    "_id" : "wm-goToPage_Stims-wm.NavigationVariable-1564654747502",
+    "name" : "goToPage_Stims",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Stims",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_UserDetails" : {
+    "_id" : "wm-goToPage_UserDetails-wm.NavigationVariable-1564666334774",
+    "name" : "goToPage_UserDetails",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "UserDetails",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
   },
   "loggedInUser" : {
     "_id" : "wm-loggedInUser-wm.Variable-1564565249808",

@@ -1,16 +1,20 @@
 <wm-partial name="leftnav" type="leftnav">
-    <wm-nav name="leftnavigation" type="pills" layout="stacked">
+    <wm-panel iconclass="wi wi-menu" autoclose="outsideClick" title="Menu" name="panel2" closable="false" collapsible="true" expanded="true" actions="bind:Widgets.leftnavigation.selecteditem"></wm-panel>
+    <wm-nav name="leftnavigation" type="tabs" layout="stacked">
         <wm-nav-item name="list_dashboard">
-            <wm-anchor caption="Dashboard" name="dashboardLink" iconclass="wi wi-bar-graph"></wm-anchor>
+            <wm-anchor caption="Projects" name="projects" iconclass="wi wi-folder" on-click="Actions.goToPage_Projects.invoke()" padding="0px unset unset unset"></wm-anchor>
         </wm-nav-item>
         <wm-nav-item name="list_order">
-            <wm-anchor caption="Pending Orders" name="orderLink" iconclass="wi wi-file"></wm-anchor>
+            <wm-anchor caption="Stims" name="stims" iconclass="wi wi-image" on-click="Actions.goToPage_Stims.invoke()"></wm-anchor>
         </wm-nav-item>
         <wm-nav-item name="list_inventory">
-            <wm-anchor caption="Inventory" name="inventoryLink" iconclass="wi wi-tag"></wm-anchor>
+            <wm-anchor caption="Embed" name="embed" iconclass="wi wi-create" on-click="Actions.goToPage_Embed.invoke()"></wm-anchor>
         </wm-nav-item>
         <wm-nav-item name="list_support">
-            <wm-anchor caption="Support Calls" name="supportLink" iconclass="wi wi-envelope"></wm-anchor>
+            <wm-anchor caption="Results" name="results" iconclass="wi wi-check-box" hyperlink="Results" on-click="Actions.goToPage_Results.invoke()"></wm-anchor>
+        </wm-nav-item>
+        <wm-nav-item name="nav_item5">
+            <wm-anchor name="analysis" iconclass="wi wi-pie-chart" caption="Analysis" on-dblclick="Actions.goToPage_Analysis.invoke()"></wm-anchor>
         </wm-nav-item>
     </wm-nav>
 </wm-partial>
